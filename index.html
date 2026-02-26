@@ -34,23 +34,47 @@
 
       <form action="" class="flex flex-col justify-center items-start space-y-2 md:space-y-0 md:space-x-4 ">
 
-        <section class=" flex flex-col md:flex-row space-y-2 md:space-x-4 ">
-          <span>
+        <section class="w-full flex flex-col md:flex-row space-y-2 md:space-x-4 ">
+          <span class="w-full">
             <label for="first name">First Name</label>
-            <input type="text" name="name" id="firstname" placeholder="First Name"
-              class="w-full py-1 px-2 border border-gray-900 mt-2">
+            <input type="text" name="name" id="firstname" placeholder="First Name" required
+              class="w-full py-1 px-2 border border-gray-900 mt-2 rounded-md">
           </span>
-          <span>
+          <span class="w-full">
             <label for="last name">Last Name</label>
-            <input type="text" name="name" id="lastname" placeholder="Last Name"
-              class="w-full py-1 px-2 border border-gray-900 mt-2">
+            <input type="text" name="name" id="lastname" placeholder="Last Name" required
+              class="w-full py-1 px-2 border border-gray-900 mt-2 rounded-md">
           </span>
         </section>
 
-        <span>
+        <span class="w-full">
           <label for="email">Email Address</label>
-          <input type="email" name="name" id="email" placeholder="Email"
-            class="w-full py-1 px-2 border border-gray-900 mt-2">
+          <input type="email" name="name" id="email" placeholder="Email" required
+            class="w-full py-1 px-2 border border-gray-900 mt-2 rounded-md">
+        </span>
+
+        <section class="w-full flex flex-col mt-2 space-y-1 md:space-x-4 ">
+
+          <label for="first name">Querry Type</label>
+          <i class="flex flex-col mt-1 md:flex-row space-y-4 space-x-4 md:space-y-0">
+            <span class="w-full flex border px-4 py-1 rounded-md space-x-4 active:bg-green-200 border-green-400">
+              <input type="radio" name="name" id="General" required
+                class=" py-1 px-2 borderd rounded-md border-green-400">
+                <p>General Enquiry</p>
+            </span>
+           
+            <span class="w-full flex border px-4 py-1 rounded-md space-x-4">
+              <input type="radio" name="name" id="Support" required
+                class=" py-1 px-2 border border-gray-900 rounded-md">
+                <p>Support Request</p>
+            </span>
+           
+          </i>
+        </section>
+
+        <span class="w-full flex flex-col ">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" class="border ring-outline-none"></textarea>
         </span>
 
 
