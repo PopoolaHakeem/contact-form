@@ -7,6 +7,7 @@
   <!-- displays site properly based on user's device -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="/style.css">
 
   <title>Frontend Mentor | Contact form</title>
 
@@ -38,28 +39,28 @@
           <span class="w-full">
             <label for="first name">First Name</label>
             <input type="text" name="name" id="firstname" placeholder="First Name" required
-              class="w-full py-1 px-2 border border-gray-900 mt-2 rounded-md">
+              class="w-full py-1 px-2 border border-gray-900 mt-2 rounded-md focus:outline-none focus:ring-1 focus:ring-green-200 ">
           </span>
           <span class="w-full">
             <label for="last name">Last Name</label>
             <input type="text" name="name" id="lastname" placeholder="Last Name" required
-              class="w-full py-1 px-2 border border-gray-900 mt-2 rounded-md">
+              class="w-full py-1 px-2 border border-gray-900 mt-2 rounded-md focus:outline-none focus:ring-1 focus:ring-green-200 ">
           </span>
         </section>
 
         <span class="w-full">
           <label for="email">Email Address</label>
           <input type="email" name="name" id="email" placeholder="Email" required
-            class="w-full py-1 px-2 border border-gray-900 mt-2 rounded-md">
+            class="w-full py-1 px-2 border border-gray-900 mt-2 rounded-md focus:outline-none focus:ring-1 focus:ring-green-200 ">
         </span>
 
         <section class="w-full flex flex-col mt-2 space-y-1 md:space-x-4 ">
 
           <label for="first name">Querry Type</label>
-          <i class="flex flex-col mt-1 md:flex-row space-y-4 space-x-4 md:space-y-0">
-            <span class="w-full flex border px-4 py-1 rounded-md space-x-4 active:bg-green-200 border-green-400">
+          <span class="flex flex-col mt-1 md:flex-row space-y-4 space-x-4 md:space-y-0">
+            <span class="w-full flex border px-4 py-1 rounded-md space-x-4  active:bg-green-200 border-gray-400  focus:ring-1 focus:ring-green-800 ">
               <input type="radio" name="name" id="General" required
-                class=" py-1 px-2 borderd rounded-md border-green-400">
+                class="w-3 h-5 checked:bg-red-400 py-1 px-2 borderd rounded-md border-green-900">
                 <p>General Enquiry</p>
             </span>
            
@@ -69,12 +70,12 @@
                 <p>Support Request</p>
             </span>
            
-          </i>
+          </span>
         </section>
 
         <span class="w-full flex flex-col ">
           <label for="message">Message</label>
-          <textarea name="message" id="message" class="border ring-outline-none"></textarea>
+          <textarea name="message" id="message" class="border rounded-md focus:outline-none focus:ring-1 focus:ring-green-200"></textarea>
         </span>
 
 
