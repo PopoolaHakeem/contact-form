@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
-    
 }
+
 input[type="radio"] {
   accent-color: hsl(169, 82%, 27%);
 }
