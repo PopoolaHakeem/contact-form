@@ -45,15 +45,14 @@
           <input type="email" name="name" id="email" placeholder="Email" required
             class="w-full py-1 px-2 border-2 border-gray-300 mt-2 rounded-md focus:outline-none focus:ring-1 focus:ring-green-200 ">
         </span>
-        
+
         <!-- QUERRY SELECTION -->
         <section id="querry" class="w-full flex flex-col mt-2 space-y-1 md:space-x-4 ">
           <label for="first name">Querry Type</label>
           <div class="flex flex-col mt-1 md:flex-row space-y-4 space-x-4 md:space-y-0">
             <span
               class="w-full flex border-2 px-4 py-1 rounded-md space-x-4 active:bg-green-200 border-gray-300 focus:ring-2 focus:ring-green-800 ">
-              <input type="radio" name="name" id="general" required
-                class="w-4 h-6 checked:bg-red-400 py-1 px-2">
+              <input type="radio" name="name" id="general" required class="w-4 h-6 checked:bg-red-400 py-1 px-2">
               <p>General Enquiry</p>
             </span>
 
@@ -74,21 +73,26 @@
 
         <!-- CHECKBOX  -->
         <div class="w-full flex justify-start items-center gap-4 mt-2 ">
-          <input type="checkbox" name="T&C" id="T&C" required class="w-4 h-5 checked:bg-red-400 py-1 px-2 borderd rounded-md border-green-900">
+          <input type="checkbox" name="T&C" id="T&C" required
+            class="w-4 h-5 checked:bg-red-400 py-1 px-2 borderd rounded-md border-green-900">
           <p>I consent to being contacted by the team</p>
         </div>
 
         <!-- SUBMIT BUTTON -->
-        <button type="submit" onclick="submitForm()" class="w-full mt-3 bg-green-700 text-white py-2 rounded-md active:bg-green-900">
+        <button type="submit" onclick="Submit()"
+          class="w-full mt-3 bg-green-700 text-white py-2 rounded-md active:bg-green-900">
           Submit
         </button>
 
       </form>
 
-      <!-- SUCCESS MESSAGE -->
-      
+
     </div>
-    <div id="success-message" class="hidden absolute top-5 bg-[#333] text-[#f4f4f4] px-3 py-5 md:p-7 space-y-2 rounded-2xl">
+
+
+    <!-- SUCCESS MESSAGE -->
+    <div id="success-message"
+      class="hidden absolute top-5 bg-[#333] text-[#f4f4f4] px-3 py-5 md:p-7 space-y-2 rounded-2xl">
 
       <p class="flex gap-4 text-xl font-[600]">
         <img src="/assets/images/icon-success-check.svg" alt="" class="">
@@ -97,7 +101,7 @@
       <p class="text-white/80 text-[13px]">
         Thanks for completing the form. We'll be in touch soon!
       </p>
-      
+
     </div>
 
   </div>

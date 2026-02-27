@@ -6,6 +6,7 @@ const email = document.getElementById('email')
 const querry = document.getElementById('querry')
 
 const successMsg = document.getElementById('success-message')
-function submitForm() {
+
+function Submit() {
     successMsg.classList.remove('hidden')
 }
