@@ -5,8 +5,7 @@ const secondName = document.getElementById('last-name')
 const email = document.getElementById('email')
 const querry = document.getElementById('querry')
 
-function {
-
-
-
+const successMsg = document.getElementById('success-message')
+function submitForm() {
+    successMsg.classList.remove('hidden')
 }
