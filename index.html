@@ -23,18 +23,18 @@
         Contact Us
       </h1>
 
-      <form action="" id="contact-form" class="flex flex-col justify-center items-start space-y-3 md:space-x-4 ">
+      <form action="" id="contactForm" class="flex flex-col justify-center items-start space-y-3 md:space-x-4 ">
 
         <!-- FIRST NAME & LAST NAME -->
         <section class="w-full flex flex-col md:flex-row space-y-2 md:space-x-4 ">
           <span class="w-full">
-            <label for="first name">First Name</label>
-            <input type="text" name="name" id="first-name" placeholder="First Name" required
+            <label for="firstName">First Name</label>
+            <input type="text" name="name" id="firstName" placeholder="First Name" require
               class="w-full py-1 px-2 border-2 border-gray-300 mt-2 rounded-md focus:outline-none focus:ring-1 focus:ring-green-200 ">
           </span>
           <span class="w-full">
-            <label for="last name">Last Name</label>
-            <input type="text" name="name" id="last-name" placeholder="Last Name" required
+            <label for="lastName">Last Name</label>
+            <input type="text" name="name" id="lastName" placeholder="Last Name" require
               class="w-full py-1 px-2 border-2 border-gray-300 mt-2 rounded-md focus:outline-none focus:ring-1 focus:ring-green-200 ">
           </span>
         </section>
@@ -42,38 +42,39 @@
         <!-- EMAIL ADDRESS -->
         <span class="w-full">
           <label for="email">Email Address</label>
-          <input type="email" name="name" id="email" placeholder="Email" required
+          <input type="email" name="email" id="email" placeholder="Email" require
             class="w-full py-1 px-2 border-2 border-gray-300 mt-2 rounded-md focus:outline-none focus:ring-1 focus:ring-green-200 ">
         </span>
 
         <!-- QUERRY SELECTION -->
         <section id="querry" class="w-full flex flex-col mt-2 space-y-1 md:space-x-4 ">
-          <label for="first name">Querry Type</label>
+          <label for="querry">Querry Type</label>
           <div class="flex flex-col mt-1 md:flex-row space-y-4 space-x-4 md:space-y-0">
             <span
               class="w-full flex border-2 px-4 py-1 rounded-md space-x-4 active:bg-green-200 border-gray-300 focus:ring-2 focus:ring-green-800 ">
-              <input type="radio" name="name" id="general" required class="w-4 h-6 checked:bg-red-400 py-1 px-2">
+              <input type="radio" name="name" id="general" require class="w-4 h-6 checked:bg-red-400 py-1 px-2">
               <p>General Enquiry</p>
             </span>
 
             <span
               class="w-full flex border-2 px-4 py-1 rounded-md space-x-4 active:bg-green-200 border-gray-300 focus:ring-2 focus:ring-green-800 ">
-              <input type="radio" name="name" id="support" required
+              <input type="radio" name="name" id="support" require
                 class="w-4 h-6 checked:bg-red-400 py-1 px-2 borderd rounded-md border-green-900">
               <p>Support Request</p>
             </span>
           </div>
         </section>
 
+        <!-- TEXTAREA -->
         <span class="w-full flex flex-col ">
           <label for="message">Message</label>
-          <textarea name="message" id="message" required
+          <textarea name="message" id="message" require
             class="border-2 border-gray-300 rounded-md mt-2 focus:outline-none focus:ring-1 focus:ring-green-200"></textarea>
         </span>
 
         <!-- CHECKBOX  -->
         <div class="w-full flex justify-start items-center gap-4 mt-2 ">
-          <input type="checkbox" name="T&C" id="T&C" required
+          <input type="checkbox" name="T&C" id="T&C" require
             class="w-4 h-5 checked:bg-red-400 py-1 px-2 borderd rounded-md border-green-900">
           <p>I consent to being contacted by the team</p>
         </div>
@@ -83,15 +84,16 @@
           class="w-full mt-3 bg-green-700 text-white py-2 rounded-md active:bg-green-900">
           Submit
         </button>
-
       </form>
-
-
     </div>
 
+    <!-- ERROR MESSAGE -->
+    <div id="errorMessage" class="hidden absolute fixed top-5 bg-red-700 text-white px-3 py-5 md:p-7 space-y-2 rounded-2xl">
+      <p class="text-[16px] font-[600]">Error: Please fill in all require fields.</p>
+    </div>
 
     <!-- SUCCESS MESSAGE -->
-    <div id="success-message"
+    <div id="successMessage"
       class="hidden absolute fixed top-5 bg-[#333] text-[#f4f4f4] px-3 py-5 md:p-7 space-y-2 rounded-2xl">
 
       <p class="flex gap-4 text-[16px] font-[600]">
@@ -103,6 +105,11 @@
       </p>
 
     </div>
+
+
+
+
+
 
   </div>
   <script src="/script.js"></script>
