@@ -1,4 +1,3 @@
-
 const Form = document.getElementById('contactForm');
 const successMsg = document.getElementById('successMessage');
 const errorMsg = document.getElementById('errorMessage');
@@ -29,7 +28,7 @@ Form.addEventListener('submit', (e) => {
         showError(lastName, 'last name is required');
     }
 
-    if(email.value.trim() === '') {
+    if (email.value.trim() === '') {
         isValid = false;
         showError(email, 'email is required');
     }
@@ -39,7 +38,7 @@ Form.addEventListener('submit', (e) => {
         showError(message, 'message is required');
     }
 
-    if (general.checked === false && support.checked === false ) {
+    if (general.checked === false && support.checked === false) {
         isValid = false;
         showError(general, 'please select an option')
     }
@@ -54,9 +53,18 @@ Form.addEventListener('submit', (e) => {
     if (isValid) {
         successMsg.classList.remove('hidden');
         errorMsg.classList.add('hidden');
+
+        setTimeout(() => {
+            successMsg.classList.add('hidden');
+        }, 2000);
+
     } else {
         successMsg.classList.add('hidden');
         errorMsg.classList.remove('hidden');
+
+        setTimeout(() => {
+            errorMsg.classList.add('hidden');
+        }, 2000);
     }
 
 
@@ -68,7 +76,7 @@ function showError(input, message) {
     error.className = 'errorMessage'
     error.textContent = message
     error.style.color = 'red';
-    
+
 
     input.parentElement.appendChild(error);
 
