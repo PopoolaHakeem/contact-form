@@ -58,6 +58,9 @@ Form.addEventListener('submit', (e) => {
             successMsg.classList.add('hidden');
         }, 2000);
 
+        Form.reset();
+        
+
     } else {
         successMsg.classList.add('hidden');
         errorMsg.classList.remove('hidden');
@@ -67,7 +70,7 @@ Form.addEventListener('submit', (e) => {
         }, 2000);
     }
 
-
+    
 })
 
 // FUNCTION TO SHOW ERROR MESSAGE
