@@ -53,6 +53,7 @@ Form.addEventListener('submit', (e) => {
     if (isValid) {
         successMsg.classList.remove('hidden');
         errorMsg.classList.add('hidden');
+        
 
         setTimeout(() => {
             successMsg.classList.add('hidden');
